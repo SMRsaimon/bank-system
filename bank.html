@@ -1,0 +1,93 @@
+<!-- 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Bootstrap css cdn  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="bank.css">
+</head>
+
+<body>
+
+    <!-- part 1 login area  -->
+    <div id="loginArea" class="container">
+        <div class="row d-flex justify-content-center mt-5">
+            <div class="col-lg-6  col-sm-8">
+                <h1> Wellcome to SMR Creative bank </h1>
+
+                <div class="loginForm">
+                    <h2 class="text-center h1">Log In</h2>
+                    <label for="email" class="mt-3">  Email adress: </label>
+                    <input id="email" type="text" class="form-control" placeholder="Enter Your Email adress">
+                    <label for="password" class="mt-3"> Password : </label>
+                    <input id="password" type="password" class="form-control" placeholder="Enter Your Password">
+                    <button id="logInButton" type="button" class="btn mt-3 log-in-button">Log In </button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- part 2 clint area  -->
+
+
+
+    <div id="userArea" class="container">
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="contant-container">
+                    <h3>Deposit</h3>
+                    <h1>$ <span id="depositeValue">00</span></h1>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="contant-container">
+                    <h3>Withdeaw</h3>
+                    <h1>$ <span id="previousWidrow">00</span></h1>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="contant-container">
+                    <h3>Main Balance</h3>
+                    <h1>$ <span id="mainBalance">1000</span></h1>
+                </div>
+
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-6 mt-5">
+                <div class="input-area">
+                    <h3>Deposit </h3>
+                    <input id="depositeEnter" type="text" class="form-control" placeholder="$ amount you want to Deposit">
+                    <button id="depositeBtn" type="button" class="btn mt-3 log-in-button">Deposit </button>
+
+                </div>
+            </div>
+            <div class="col-sm-6 mt-5">
+                <div class="input-area">
+                    <h3>Withdraw </h3>
+                    <input id="withdraw" type="text" class="form-control" placeholder="$ amount you want to Withdraw">
+                    <button id="widrowBtn" type="button" class="btn mt-3 log-in-button">Withdraw </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- main js file  -->
+    <script src="bank.js"></script>
+</body>
+
+</html>
