@@ -38,9 +38,31 @@ label {
     padding: 15px 20px;
     border-radius: 10px;
     margin-top: 20px;
-    min-height: 150px;
+    height: auto;
 }
 
 #userArea {
     display: none;
+}
+
+@media(max-width:800px) {
+    .single {
+        flex-basis: 50%;
+        margin-top: 10px;
+        height: auto;
+    }
+    .contant-container {
+        width: 100%;
+        padding: 4px 5px;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        font-size: 18px;
+    }
+    .last {
+        width: 100%;
+        min-height: 80px;
+        height: 50px;
+    }
 }
